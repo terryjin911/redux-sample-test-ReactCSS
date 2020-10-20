@@ -1,0 +1,41 @@
+
+
+yarn create react-app reduxsampleapp
+cd reduxsampleapp
+
+1)페이지 라우팅 팩키지 설치
+-라우팅 팩키지 설치: yarn add react-router-dom
+-페이지 구성
+-라우팅 구성
+
+
+2)리덕스 관련 팩키지 설치 
+-리덕스 관련 팩키지 설치
+yarn add redux
+yarn add react-redux
+
+
+3)크롬 리액트 개발 확장툴 설치
+-크롬 브라우저 리액트 리덕개발 확장툴 설치 
+-리액트 프로젝트에 크롬확장툴 지원 팩키지 설치
+yarn add redux-devtools-extension
+
+4)src/index.js에서 Store 객체 생성 및 리듀서 머징처리
+-index.js Provider에 store 속성에 생성된 store 객체를
+app.js 루트 컴포넌트의 속성으로 자식 컴포넌트에 전달하여
+모든 컴포넌트에서 store(리듀서,전역데이터) 접근제어가 가능하게한다.
+
+5)로그인 인증 정보 로컬 저장을 위한 리액트 쿠키 팩키지 설치
+
+yarn add react-cookie
+
+
+
+
+
+
+
+
+
+
+
