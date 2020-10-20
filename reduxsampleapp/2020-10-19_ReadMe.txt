@@ -1,0 +1,56 @@
+2020-10-19 오후 7시45분
+
+송희쌤이랑 인아언니가 score데이터 옮기는걸 도와주셨음
+내가 기존에 짜놓은게 너무 복잡하고 손이 많이가서
+제대로 하려고 redux를 이용하자고 하심.
+
+
+eventgamedb mysql 생성하기
+
+
+
+EventGameApp-Redux
+ㄴreduxapp
+ㄴmysite
+    ㄴeventgamebackend
+
+>>>>>>>>>>      일단 이 폴더에서는
+>>>>>>>>>>      내 프로젝트 기본 ui만 가져다가 붙여서 모양만 좀 만들자
+
+>>>>>>>>>>      아무 정보가 없는 파일 날리기
+    >>>>  [삭제]MemberList "회원목록보기"  
+                Regist "회원가입 페이지"
+                Profile "회원 프로파일 정보 보기"
+                ProductsDetail 상품 상세 페이지
+
+>>>>>>>>>>      인아언니랑 Redux 점수/이름/메일 들어가는거 확인하고
+>>>>>>>>>>      기존작업 소스는 그냥 통째로 끌어다가 추가하는걸로 하자
+>>>>>>>>>>
+
+
+
+
+
+
+액션 : 액션의 이름
+리듀서 : 변화를 일으키는 함수   액션생성함수를 통해 전달된 값으로 전역데이터 값을 변경적용
+스토어(one and only) : 앱 상태 + 리듀서
+디스패치 : 액션을 발생시키는 스토어 내장함수
+구독(render랑 세트?) : 상태 업데이트마다 호출(??어디에쓰는거지;)스토어 내장함수
+
+
+
+[샘플앱]
+>member.js   (액션의 이름)=상태업데이트를 할 때 참고해야할 값
+insertMember(MEMBER_INSERT)    member 등록 액션이 일어나는 함수
+login(MEMBER_LOGIN)           로그인 액션이 일어나는 함수
+        >>>내꺼로 대입하면 insertScore(SCORE_INSERT)
+                                entry(USER_INSERT)?
+
+                    Game.js
+[내프로젝트]    score를 얻음 => 얻은 score를 가지고 다음화면에서 보여주면서 name/email 작성폼 띄움
+                        => 
+List.js 응모확인 페이지에서는 score / name / datetime(옵션) 값을 반환해줘야함
+
+
+
