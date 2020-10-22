@@ -47,6 +47,10 @@ login(MEMBER_LOGIN)           로그인 액션이 일어나는 함수
         >>>내꺼로 대입하면 insertScore(SCORE_INSERT)
                                 entry(USER_INSERT)?
 
+>productAdd.js  버튼누르는 곳. 근데 "n건"이 저장되었습니다는 why 반영되지않는가
+>products.js    이전페이지에서 버튼 누른 횟수가 "n건"으로 증감표현 되는 곳
+
+
                     Game.js
 [내프로젝트]    score를 얻음 => 얻은 score를 가지고 다음화면에서 보여주면서 name/email 작성폼 띄움
                         => 

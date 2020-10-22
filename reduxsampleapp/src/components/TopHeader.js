@@ -29,20 +29,30 @@ const TopHeader = () => {
 
   return (
     <div>
+      <br />
+      <br />
       상단 헤더 공통영역 컴포넌트 <br></br>
       현재 총 제품 건수는 {globalProducts.length}건입니다.<br></br>
       {/* 로그인 쿠키정보 존재에 따른 UX 분기처리 */}
       {getLoggedInUser() == undefined ? (
         <div>
-          <Link to={"/"}>Logo</Link> |<Link to={"/login"}>로그인</Link>|
-          <br></br>
+          <Link to={"/"}>Main</Link> |<Link to={"/login"}>로그인</Link>|
         </div>
       ) : (
         <div>
-          <Link to={"/"}>Logo</Link> |<Link to={"/logout"}>로그아웃</Link>
-          <br></br>
+          <Link to={"/"}>Main</Link> |<Link to={"/logout"}>로그아웃</Link>
         </div>
       )}
+      <Link to={"/products"}>products</Link> |
+      <Link to={"/product/add"}>Add Product</Link>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };

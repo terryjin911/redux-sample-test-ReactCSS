@@ -28,7 +28,7 @@ const ProductAdd = () => {
   //현재 화면의 제품정보를 전역 제품목록 데이터에 저장한다.
   //전역 데이터 저장 처리 함수
   const onAddProduct = () => {
-    //실행시킬 액션 실행함수에 화면의 값을 전달한다.
+    //실행시킬 액션 실행함수에 화면의 값을 전달한다. +1 건
     dispatch(insertProduct(product));
   };
 
@@ -104,6 +104,7 @@ const ProductAdd = () => {
       {/* <button onClick={onSave}>저장</button> */}
       <button onClick={onAddProduct}>저장</button>
       <Link to={"/products/"}>목록이동</Link>
+      {/* 왜 이게 globalProducts가 아니지? 그리고 왜 적용이 안되지? */}
       <h1>총 {products.length} 건이 저장되었습니다.</h1>
       <Footer />
     </div>
